@@ -1,0 +1,16 @@
+header {
+
+  &.MuiAppBar-root {
+    background-color: $color3;
+    align-items: center;
+
+    .MuiToolbar-root {
+      width: 100%;
+      max-width: 1240px;
+
+      h6 {
+        cursor: pointer;
+      }
+    }
+  }
+}

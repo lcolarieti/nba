@@ -1,0 +1,33 @@
+.card-container {
+  padding: 30px 24px;
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100%;
+    border: 1px solid $color2;
+    margin-bottom: 30px;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      @include transform(translateX(-50%));
+    }
+
+  }
+
+  p {
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+  }
+}
